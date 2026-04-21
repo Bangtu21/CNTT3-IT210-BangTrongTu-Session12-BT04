@@ -1,0 +1,15 @@
+Session12-BT04-Phần 1
+- Spring Boot quản lý các cấu hình mặc định thông qua cơ chế Auto-configuration kết hợp với Default Properties:
+	+ Khi ứng dụng khởi động, Spring Boot sẽ:
+					- Tự động cấu hình dựa trên dependency có trong project
+					- Áp dụng các giá trị mặc định (ví dụ: port = 8080, context-path = /)
+
+	+ Các cấu hình này có thể được ghi đè (override) bằng:
+					- application.properties
+					- application.yml
+					- Biến môi trường (environment variables)
+
+- Chúng ta có thể tìm thấy danh sách các cấu hình này ở:
+	+ Tài liệu chính thức của Spring Boot (Common Application Properties)
+	+ Trong source code của Spring Boot (các class cấu hình như ServerProperties)
+	+ Metadata file: spring-configuration-metadata.json
